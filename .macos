@@ -174,6 +174,9 @@ sudo systemsetup -settimezone "America/Toronto" > /dev/null
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
+# Don't launch iTunes when a device is connected
+defaults write com.apple.iTunesHelper ignore-devices 1
+
 ###############################################################################
 # Energy saving                                                               #
 ###############################################################################
