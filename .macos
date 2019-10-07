@@ -176,6 +176,8 @@ sudo systemsetup -settimezone "America/Toronto" > /dev/null
 
 # Don't launch iTunes when a device is connected
 defaults write com.apple.iTunesHelper ignore-devices 1
+# https://apple.stackexchange.com/questions/6360/how-do-i-stop-itunes-from-automatically-backing-up-the-ipad
+defaults write com.apple.iTunes dontAutomaticallySyncIPods -bool true
 
 ###############################################################################
 # Energy saving                                                               #
